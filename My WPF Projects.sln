@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34227.203
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBinding", "DataBinding\DataBinding.csproj", "{C7F897E7-5375-4C72-AF5F-C10B3127319C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControls", "CustomControls\CustomControls.csproj", "{347C3672-7E85-4C8D-8397-BDB4B6B38E86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DInWPF", "DInWPF\DInWPF.csproj", "{72D812DD-3999-4833-A451-4ED3BE496FAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFlibrary", "WPFlibrary\WPFlibrary.csproj", "{94FA88CB-8535-4DA0-9918-CB151294760E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityToolkitExperiments", "MVVMBasic\CommunityToolkitExperiments.csproj", "{64A3BE85-DE4E-432D-83FE-BB2F0F6D844D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingData", "SharingData\SharingData.csproj", "{4E433420-04F5-498D-A88B-C1B29F51C1BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7F897E7-5375-4C72-AF5F-C10B3127319C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F897E7-5375-4C72-AF5F-C10B3127319C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F897E7-5375-4C72-AF5F-C10B3127319C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F897E7-5375-4C72-AF5F-C10B3127319C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347C3672-7E85-4C8D-8397-BDB4B6B38E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347C3672-7E85-4C8D-8397-BDB4B6B38E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347C3672-7E85-4C8D-8397-BDB4B6B38E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347C3672-7E85-4C8D-8397-BDB4B6B38E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D812DD-3999-4833-A451-4ED3BE496FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D812DD-3999-4833-A451-4ED3BE496FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D812DD-3999-4833-A451-4ED3BE496FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D812DD-3999-4833-A451-4ED3BE496FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FA88CB-8535-4DA0-9918-CB151294760E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FA88CB-8535-4DA0-9918-CB151294760E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FA88CB-8535-4DA0-9918-CB151294760E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FA88CB-8535-4DA0-9918-CB151294760E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A3BE85-DE4E-432D-83FE-BB2F0F6D844D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A3BE85-DE4E-432D-83FE-BB2F0F6D844D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A3BE85-DE4E-432D-83FE-BB2F0F6D844D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A3BE85-DE4E-432D-83FE-BB2F0F6D844D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E433420-04F5-498D-A88B-C1B29F51C1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E433420-04F5-498D-A88B-C1B29F51C1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E433420-04F5-498D-A88B-C1B29F51C1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E433420-04F5-498D-A88B-C1B29F51C1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCF94306-59B0-4C5F-ADBF-2391ED4C595F}
+	EndGlobalSection
+EndGlobal
