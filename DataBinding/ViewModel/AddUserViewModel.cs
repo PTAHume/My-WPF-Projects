@@ -13,8 +13,8 @@ namespace DataBinding.ViewModel
 
         public AddUserViewModel()
         {
-            AddUserCommand = new RelayCommand(AddUser, CanAddUser);
-            ClickCommand = new RelayCommand(Click, delegate (object obj) { return true; });
+            AddUserCommand = new RelayCommand(AddUser, canExecuteMethod => true);
+            ClickCommand = new RelayCommand(Click, canExecuteMethod => true );
         }
 
         private bool CanAddUser(object obj) => true;

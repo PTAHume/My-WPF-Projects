@@ -1,28 +1,17 @@
-﻿using DInWPF.StartUpHelpers;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Messaging;
+using DInWPF.StartUpHelpers;
+using DInWPF.ViewModels;
 using System.Windows;
 using WPFLibrary;
-
 namespace DInWPF;
 
-public partial class MainWindow : Window
+public partial class MainWindow :  Window
 {
-    private readonly IDataAccess _dataAccess;
-    private readonly IAbstractFactory<ChildForm> _factory;
 
-    public MainWindow(IDataAccess dataAccess, IAbstractFactory<ChildForm> factory)
+    public MainWindow(MainViewModel viewModel)//, IAbstractFactory<ChildForm> factory)
     {
         InitializeComponent();
-        _dataAccess = dataAccess;
-        _factory = factory;
-    }
-
-    private void getData_Click(object sender, RoutedEventArgs e)
-    {
-        Data.Text = _dataAccess.GetData();
-    }
-
-    private void OpenChildForm_Click(object sender, RoutedEventArgs e)
-    {
-        _factory.Create().Show();
+        this.DataContext = viewModel;//new MainViewModel(factory, dataAccess);
     }
 }

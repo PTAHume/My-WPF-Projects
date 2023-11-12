@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
             <TextBlock>Child Form</TextBlock>
-            <TextBlock x:Name="DataAccessInfo"></TextBlock>
+            <TextBlock Text="{Binding}" x:Name="DataAccessInfo"></TextBlock>
         </StackPanel>
     </Grid>
 </Window>

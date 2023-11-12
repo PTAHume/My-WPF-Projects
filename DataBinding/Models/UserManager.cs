@@ -4,7 +4,7 @@ namespace DataBinding.Models
 {
     public class UserManager
     {
-        public static ObservableCollection<User> _DatabaseUsers = new ObservableCollection<User>() {
+        public static ObservableCollection<User> _DatabaseUsers = new() {
             new User { Email = "test1@user.com", UserName = "Test User 1" },
             new User { Email = "test2@user.com", UserName = "Test User 2" },
             new User { Email = "test3@user.com", UserName = "Test User 3" },

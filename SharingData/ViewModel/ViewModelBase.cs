@@ -1,6 +1,4 @@
-﻿using SharingData.Core;
-
-namespace SharingData.ViewModel;
+﻿namespace SharingData.ViewModel;
 
 public class ViewModelBase
 {

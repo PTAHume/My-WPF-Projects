@@ -1,21 +1,29 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.DependencyInjection;
 using CommunityToolkit.Mvvm.Messaging;
-using System.Windows;
-using System.Windows.Controls;
+using DInWPF.Model;
 using WPFLibrary;
 
 namespace DInWPF;
 
-public partial class ChildForm 
+//[ObservableRecipient]
+public partial class ChildForm : IRecipient<UserLoggedIn>
 {
     private readonly IDataAccess _dataAccess;
+ 
 
-    public ChildForm(IDataAccess dataAccess)
-         
+    public ChildForm(IDataAccess dataAccess) 
     {
         InitializeComponent();
         _dataAccess = dataAccess;
-        DataAccessInfo.Text = dataAccess.GetData();
+      //  IMessenger Messenger = messenger;
+       // messenger.Register<UserLoggedIn>(this);
+
+        //_dataAccess.GetData();
     }
+
+    public void Receive(UserLoggedIn message)
+    {
+    }
+
+
 }

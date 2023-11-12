@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.Messaging;
 using DInWPF.StartUpHelpers;
+using DInWPF.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Windows;
@@ -20,8 +21,11 @@ namespace DInWPF
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddSingleton<MainWindow>();
+                    services.AddFormFactory<MainViewModel>();
+
                     services.AddFormFactory<ChildForm>();
                     services.AddSingleton<IMessenger, WeakReferenceMessenger>();
+
                     //services.AddTransient<ChildForm>();
                     services.AddTransient<IDataAccess, DataAccess>();
                 }).Build();
