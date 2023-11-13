@@ -10,12 +10,14 @@
         d:DataContext="{d:DesignInstance Type=local:MainViewModel}">
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBox Text="{Binding FirstName}" />
-        <Button Content="Click Me" Command="{Binding ClickCommand}" Grid.Row="1"/>
-        <Button Content="Cancel" Command="{Binding ClickCancelCommand}" Grid.Row="2"/>
+        <Button Content="Click Me" Command="{Binding ClickCommand}" Grid.Row="1" />
+        <Button Content="Cancel" Command="{Binding ClickCancelCommand}" Grid.Row="2" />
+        <ProgressBar  Grid.Row="3" Maximum="100" Minimum="0" Value="{Binding LoadingValue}" Visibility="{Binding Loading}" HorizontalAlignment="Left" Height="20"  Width="300"/>
     </Grid>
 </Window>

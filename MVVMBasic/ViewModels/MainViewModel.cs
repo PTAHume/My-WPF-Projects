@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
+using System;
+using System.Runtime.CompilerServices;
 
 namespace CommunityToolkitExperiments.ViewModels;
 
@@ -14,12 +16,19 @@ public partial class MainViewModel : IRecipient<UserLoggedIn>
     [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
     public string? _firstName = "Foo";
 
-    partial void OnFirstNameChanging(string? value){ }
+    [ObservableProperty]
+    public bool _loading;
+
+    [ObservableProperty]
+    public int _loadingValue;
+
+     partial void OnFirstNameChanging(string? value)
+    { }
 
     public MainViewModel()
-      // : base(messenger)
+    // : base(messenger)
     {
-       Messenger = WeakReferenceMessenger.Default;
+        Messenger = WeakReferenceMessenger.Default;
         // Messenger = messenger;
         Foo();
     }
@@ -40,6 +49,9 @@ public partial class MainViewModel : IRecipient<UserLoggedIn>
     {
         try
         {
+            Loading = true;
+
+            // ExecuteEverySecond();
             await Task.Delay(3_000, token);
             FirstName += "bar";
         }
@@ -47,6 +59,7 @@ public partial class MainViewModel : IRecipient<UserLoggedIn>
         {
             FirstName += " x ";
         }
+        Loading = false;
     }
 
     public void Receive(UserLoggedIn message)

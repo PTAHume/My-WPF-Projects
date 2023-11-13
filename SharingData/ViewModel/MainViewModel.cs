@@ -1,6 +1,5 @@
 ﻿using SharingData.Core;
 using SharingData.Services;
-using System.Windows.Input;
 
 namespace SharingData.ViewModel;
 

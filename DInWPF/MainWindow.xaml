@@ -8,7 +8,7 @@
         Title="MainWindow" Height="300" Width="500">
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox Text="{Binding DataField}" x:Name="Data"/>
+            <TextBox Text="{Binding DataField}" x:Name="Data" />
             <Button x:Name="getData" Padding="20 10" Command="{Binding GetDataCommand}">Get Data</Button>
             <Button x:Name="OpenChildForm" Padding="20 10" Command="{Binding OpenChildFormCommand}" >Open Child Form</Button>
         </StackPanel>

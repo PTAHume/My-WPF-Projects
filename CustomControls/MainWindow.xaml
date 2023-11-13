@@ -9,9 +9,9 @@
         WindowStyle="None">
 
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="380" Margin="249,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="274" Fill="White" RadiusX="16.5" RadiusY="16.5"/>
+        <Rectangle HorizontalAlignment="Left" Height="380" Margin="249,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="274" Fill="White" RadiusX="16.5" RadiusY="16.5" />
         <StackPanel Margin="249,27,277,27">
-            <Label Content="Team Member" Margin="26,18,0,0" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Team Member" Margin="26,18,0,0" FontSize="20" FontWeight="Bold" />
             <ListView Height="246" Width="238" Background="{x:Null}" BorderBrush="{x:Null}">
                 <local:UCMember Width="200" Height="57" Title="Mahid Ahmed" SubTitle="Project Manager" URL="\Images\icons8-avatar-64.png" Margin="5,0,0,5"></local:UCMember>
                 <local:UCMember Width="200" Height="57" Title="Daniel Kart" SubTitle="HR Head" URL="\Images\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMember>
@@ -20,11 +20,9 @@
                 <local:UCMember Width="200" Height="57" Title="Sam Curren" SubTitle="Scrum Master" URL="\Images\icons8-avatar-64 (4).png" Margin="5,0,0,5"></local:UCMember>
                 <local:UCMember Width="200" Height="57" Title="Jacob Ekstard" SubTitle="Lead Developer" URL="\Images\icons8-avatar-64 (1).png" Margin="5,0,0,5"></local:UCMember>
             </ListView>
-            <Button Style="{DynamicResource ButtonStyle1}" Content="Add member" Height="43" Width="237" Margin="0,9,0,0" Background="#FF36BFF4" Foreground="White" FontSize="14"/>
-
-
+            <Button Style="{DynamicResource ButtonStyle1}" Content="Add member" Height="43" Width="237" Margin="0,9,0,0" Background="#FF36BFF4" Foreground="White" FontSize="14" />
         </StackPanel>
 
-        <local:FanUC HorizontalAlignment="Left" VerticalAlignment="Top" Margin="598,172,0,0"/>
+        <local:FanUC HorizontalAlignment="Left" VerticalAlignment="Top" Margin="598,172,0,0" />
     </Grid>
 </Window>

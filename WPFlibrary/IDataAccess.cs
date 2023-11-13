@@ -2,9 +2,6 @@
 {
     public interface IDataAccess
     {
-
-
         public string GetData();
     }
-
 }

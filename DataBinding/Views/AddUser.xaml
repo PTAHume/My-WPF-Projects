@@ -15,7 +15,7 @@
             <Binding Path="UserName" UpdateSourceTrigger="PropertyChanged"
                      NotifyOnValidationError="True">
                 <Binding.ValidationRules>
-                    <validation:UserNameValidationRule ValidatesOnTargetUpdated="True"  />
+                    <validation:UserNameValidationRule ValidatesOnTargetUpdated="True" />
                 </Binding.ValidationRules>
             </Binding>
             <TextBox.Style>
@@ -48,7 +48,7 @@
             <Binding TargetNullValue="" Path="Email" UpdateSourceTrigger="PropertyChanged"
              NotifyOnValidationError="True">
                 <Binding.ValidationRules>
-                    <validation:UserNameValidationRule ValidatesOnTargetUpdated="True"   />
+                    <validation:UserNameValidationRule ValidatesOnTargetUpdated="True" />
                 </Binding.ValidationRules>
             </Binding>
             <TextBox.Style>

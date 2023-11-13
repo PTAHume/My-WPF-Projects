@@ -1,6 +1,6 @@
-﻿using System.Windows;
-using SharingData.View;
+﻿using SharingData.View;
 using SharingData.ViewModel;
+using System.Windows;
 
 namespace SharingData.Services;
 

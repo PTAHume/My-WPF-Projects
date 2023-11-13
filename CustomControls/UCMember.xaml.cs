@@ -2,7 +2,6 @@
 
 namespace CustomControls;
 
-
 public partial class UCMember : UserControl
 {
     public UCMember()

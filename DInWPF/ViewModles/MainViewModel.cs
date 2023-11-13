@@ -1,21 +1,14 @@
-﻿
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.Messaging;
 using DInWPF.StartUpHelpers;
-using System.ComponentModel;
-using System.Windows;
-using System.Windows.Input;
 using WPFLibrary;
-
 
 namespace DInWPF.ViewModels;
 
-public partial class MainViewModel : ObservableObject
+public partial class MainViewModel : ObservableRecipient
 {
     private readonly IDataAccess _dataAccess;
     private readonly IAbstractFactory<ChildForm> _factory;
-
 
     [ObservableProperty]
     private string? _dataField;

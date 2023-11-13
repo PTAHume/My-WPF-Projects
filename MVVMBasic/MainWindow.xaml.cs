@@ -2,6 +2,7 @@
 using System.Windows;
 
 namespace CommunityToolkitExperiments;
+
 public partial class MainWindow : Window
 {
     public MainWindow()

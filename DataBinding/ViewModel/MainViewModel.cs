@@ -1,12 +1,7 @@
 ﻿using DataBinding.Commands;
 using DataBinding.Models;
 using DataBinding.Views;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -20,12 +15,12 @@ namespace DataBinding.ViewModel
 
         public MainViewModel()
         {
-            Users= UserManager.GetUsers();
+            Users = UserManager.GetUsers();
             ShowWindowCommand = new RelayCommand(ShowWindow, CanShowWindow);
         }
 
         private bool CanShowWindow(object obj) => true;
-        
+
         private void ShowWindow(object obj)
         {
             var mainWindow = obj as Window;

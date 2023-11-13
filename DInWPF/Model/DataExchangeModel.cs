@@ -1,6 +1,5 @@
 ﻿namespace DInWPF.Model;
 
-
 public record class UserLoggedIn(string UserName); //: IDataExchangeModel;
 
 public interface IDataExchangeModel

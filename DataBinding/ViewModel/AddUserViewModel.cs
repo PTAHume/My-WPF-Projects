@@ -3,31 +3,31 @@ using DataBinding.Models;
 using System;
 using System.Windows.Input;
 
-namespace DataBinding.ViewModel
+namespace DataBinding.ViewModel;
+
+public class AddUserViewModel
 {
-    public class AddUserViewModel
+    public ICommand AddUserCommand { get; set; }
+    public string? UserName { get; set; }
+    public string? Email { get; set; }
+
+    public AddUserViewModel()
     {
-        public ICommand AddUserCommand { get; set; }
-        public string? UserName { get; set; }
-        public string? Email { get; set; }
+        AddUserCommand = new RelayCommand(AddUser, canExecuteMethod => true);
+        ClickCommand = new RelayCommand(Click, canExecuteMethod => true);
+    }
 
-        public AddUserViewModel()
-        {
-            AddUserCommand = new RelayCommand(AddUser, canExecuteMethod => true);
-            ClickCommand = new RelayCommand(Click, canExecuteMethod => true );
-        }
+    private bool CanAddUser(object obj) => true;
 
-        private bool CanAddUser(object obj) => true;
+    public ICommand ClickCommand { get; set; }
 
-        public ICommand ClickCommand { get; set; }
-        public void Click(object obj)
-        {
-            Console.Write("");
-        }
+    public void Click(object obj)
+    {
+        Console.Write("");
+    }
 
-        private void AddUser(object obj)
-        {
-            UserManager.AddUser(new User { UserName = UserName, Email = Email });
-        }
+    private void AddUser(object obj)
+    {
+        UserManager.AddUser(new User { UserName = UserName, Email = Email });
     }
 }

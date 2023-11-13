@@ -35,7 +35,7 @@
             <Button Content="AddItem"
                 Width="100"
                 Height="50"
-                Command="{Binding Path=AddItemCommand}"/>
+                Command="{Binding Path=AddItemCommand}" />
         </StackPanel>
     </Grid>
 </Window>

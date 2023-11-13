@@ -11,9 +11,8 @@
             <Button Width="100" Height="25"
                 Command="{Binding OpenSettingsWindowCommand}"
                 Content="Settings" />
-       
+
             <ListView Width="100" Height="150" ItemsSource="{Binding Path=ItemsService.Items}">
-                
             </ListView>
         </StackPanel>
     </Grid>

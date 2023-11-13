@@ -1,5 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Messaging;
+﻿using CommunityToolkit.Mvvm.Messaging;
 using DInWPF.Model;
 using WPFLibrary;
 
@@ -9,14 +8,13 @@ namespace DInWPF;
 public partial class ChildForm : IRecipient<UserLoggedIn>
 {
     private readonly IDataAccess _dataAccess;
- 
 
-    public ChildForm(IDataAccess dataAccess) 
+    public ChildForm(IDataAccess dataAccess)
     {
         InitializeComponent();
         _dataAccess = dataAccess;
-      //  IMessenger Messenger = messenger;
-       // messenger.Register<UserLoggedIn>(this);
+        //  IMessenger Messenger = messenger;
+        // messenger.Register<UserLoggedIn>(this);
 
         //_dataAccess.GetData();
     }
@@ -24,6 +22,4 @@ public partial class ChildForm : IRecipient<UserLoggedIn>
     public void Receive(UserLoggedIn message)
     {
     }
-
-
 }

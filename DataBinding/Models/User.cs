@@ -1,12 +1,11 @@
-﻿namespace DataBinding.Models
-{
-    public class User
-    {
-        public User()
-        {
-        }
+﻿namespace DataBinding.Models;
 
-        public string? UserName { get; set; }
-        public string? Email { get; set; }
+public class User
+{
+    public User()
+    {
     }
+
+    public string? UserName { get; set; }
+    public string? Email { get; set; }
 }
