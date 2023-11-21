@@ -1,7 +1,11 @@
-﻿using SharingData.Core;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Messaging;
+using SharingData.Core;
 using SharingData.Services;
 
+
 namespace SharingData.ViewModel;
+
 
 public class SettingsViewModel : ViewModelBase
 {
@@ -12,7 +16,7 @@ public class SettingsViewModel : ViewModelBase
 
     public SettingsViewModel(IItemsService itemsService)
     {
-        ItemsService = itemsService;
-        AddItemCommand = new RelayCommand(execute => { ItemsService.AddItem(Name); }, canExecute => true);
+        
+        AddItemCommand = new RelayCommand(execute => { ItemsService.AddItem(Name ?? "Default"); }, canExecute => true);
     }
 }

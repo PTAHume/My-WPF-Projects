@@ -1,8 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
-using System;
-using System.Runtime.CompilerServices;
 
 namespace CommunityToolkitExperiments.ViewModels;
 
@@ -44,6 +42,7 @@ public partial class MainViewModel : IRecipient<UserLoggedIn>
     }
 
     //private bool CanClick() => FirstName == "Foo";
+
     [RelayCommand(IncludeCancelCommand = true)]//CanExecute = nameof(CanClick))
     private async Task OnClick(CancellationToken token)
     {

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Extensions.DependencyInjection;
 using SharingData.Services;
 using SharingData.ViewModel;
 using System.Windows;
@@ -24,6 +25,8 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
+   
+        //Messenger = WeakReferenceMessenger.Default;
         var windowManger = _serviceProvider.GetRequiredService<IWindowManager>();
         windowManger.ShowWindow(_serviceProvider.GetRequiredService<MainViewModel>());
         base.OnStartup(e);
