@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<StartupObject>DataGrid.App</StartupObject>
+		<ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ApplicationDefinition Remove="App.xaml" />
+		<Content Include="Resources\AppIcon.ico" />
+		<Folder Include="Views\" />
+		<Page Include="App.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+	</ItemGroup>
+
+
+</Project>

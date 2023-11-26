@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityToolkitExperiments
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharingData", "SharingData\SharingData.csproj", "{4E433420-04F5-498D-A88B-C1B29F51C1BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{EE478589-D7A4-4ED4-A827-C01C689707E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation\Validation.csproj", "{EE478589-D7A4-4ED4-A827-C01C689707E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid", "DataGrid\DataGrid.csproj", "{6B551AE4-FD8C-4DEB-95A3-9B7F10E4AE0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EE478589-D7A4-4ED4-A827-C01C689707E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE478589-D7A4-4ED4-A827-C01C689707E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE478589-D7A4-4ED4-A827-C01C689707E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B551AE4-FD8C-4DEB-95A3-9B7F10E4AE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B551AE4-FD8C-4DEB-95A3-9B7F10E4AE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B551AE4-FD8C-4DEB-95A3-9B7F10E4AE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B551AE4-FD8C-4DEB-95A3-9B7F10E4AE0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
