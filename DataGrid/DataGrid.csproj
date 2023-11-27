@@ -4,6 +4,7 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
 		<StartupObject>DataGrid.App</StartupObject>
 		<ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
 	</PropertyGroup>
